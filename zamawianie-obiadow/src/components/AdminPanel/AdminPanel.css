@@ -1,0 +1,33 @@
+.admin-panel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Wyśrodkowanie w poziomie */
+    margin-top: 50px;          /* Dostosowanie odległości od góry strony */
+    text-align: center;        /* Wyśrodkowanie tekstu */
+  }
+  
+  .admin-panel-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Umożliwia wyśrodkowanie przycisków w poziomie */
+    gap: 10px;                 /* Odstęp między przyciskami */
+    width: 100%;
+    max-width: 300px;          /* Maksymalna szerokość przycisków */
+  }
+  
+  .admin-panel-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;               /* Ustawienie przycisków na całą szerokość kontenera */
+    max-width: 300px;          /* Maksymalna szerokość przycisków */
+  }
+  
+  .admin-panel-buttons button:hover {
+    background-color: #0056b3;
+  }
+  

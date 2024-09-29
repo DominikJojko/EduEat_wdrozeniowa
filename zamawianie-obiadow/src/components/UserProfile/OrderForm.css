@@ -1,0 +1,113 @@
+/* OrderForm.css */
+
+/* Kontener główny formularza zamówienia */
+.order-form-container {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px; /* Zwiększony rozmiar czcionki bazowej */
+}
+
+.order-form-container h1 {
+  text-align: center;
+}
+
+/* Sekcja zamówień długoterminowych */
+.long-term-order {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.date-range-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date-range-order label {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.date-range-order input {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.date-range-order button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1.1em;
+}
+
+/* Stylizacja tabeli z obiadowiami */
+.meals-table {
+  width: auto;
+  margin: 0 auto;
+  border-collapse: collapse;
+  max-width: 99%;
+  overflow-x: auto;
+}
+
+.meals-table th,
+.meals-table td {
+  border: 1px solid #ffffff;
+  padding: 10px 14px; /* Zwiększone odstępy */
+  font-size: 1.1em; /* Zwiększony rozmiar czcionki */
+}
+
+.meals-table th {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.meals-table td {
+  text-align: center;
+}
+
+/* Stylizacja przycisków aktywnych w tabeli */
+.meals-table button:not(.already-ordered-button) {
+  background-color: #4CAF50; /* Zielony kolor tła */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Płynne przejście koloru */
+}
+
+.meals-table button:not(.already-ordered-button):hover {
+  background-color: #45a049; /* Ciemniejszy zielony przy najechaniu */
+}
+
+/* Stylizacja przycisku "Już zamówiony" */
+.already-ordered-button {
+  background-color: red; /* Czerwony kolor tła */
+  color: white; /* Biały tekst */
+  border: none;
+  padding: 7px 14px;
+  font-size: 1em;
+  cursor: not-allowed; /* Kursor wskazujący, że przycisk jest nieaktywny */
+  border-radius: 4px; /* Zaokrąglenie rogów */
+  transition: background-color 0.3s ease; /* Płynne przejście koloru */
+}
+
+/* Zapobiega zmianie koloru przycisku "Już zamówiony" podczas hover */
+.meals-table .already-ordered-button:hover {
+  background-color: red; /* Utrzymuje czerwony kolor tła */
+}
+
+.already-ordered-button:disabled {
+  opacity: 0.7; /* Lekka przezroczystość, aby wskazać nieaktywność */
+  background-color: red; /* Upewnia się, że tło pozostaje czerwone */
+}
+
+/* Stylizacja komunikatów błędów */
+.error-message {
+  color: red;
+  margin-top: 20px;
+  font-weight: bold;
+}

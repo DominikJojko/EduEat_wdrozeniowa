@@ -1,0 +1,41 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.small-button {
+  padding: 7px 14px; /* Increased padding */
+  font-size: 16px; /* Increased font size */
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid white; /* Change border color to white */
+}
+
+th, td {
+  padding: 10px 14px; /* Increased padding */
+  text-align: center;
+  font-size: 1.1em; /* Increased font size */
+}

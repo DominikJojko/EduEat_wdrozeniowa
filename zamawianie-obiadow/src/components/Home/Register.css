@@ -1,0 +1,55 @@
+.register-container {
+  max-width: 500px;
+  margin: 50px auto; /* Dodano margines 50px od góry */
+  padding: 20px;
+  background-color: #363636;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.register-container h1 {
+  margin-bottom: 20px;
+}
+
+.register-form input, 
+.register-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #464646;
+  border-radius: 4px;
+}
+
+.register-form button {
+  width: 40%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.register-form button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.spacer {
+  margin-top: 30px; /* Możesz dostosować wielkość odstępu */
+  margin-bottom: 10px;
+}
+

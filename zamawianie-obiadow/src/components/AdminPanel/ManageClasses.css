@@ -1,0 +1,92 @@
+.manage-classes-container {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px; /* Zwiększony rozmiar czcionki bazowej */
+}
+
+.add-class {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add-class input {
+  margin-right: 10px;
+  padding: 12px; /* Zwiększone odstępy */
+  font-size: 1.1em; /* Zwiększony rozmiar czcionki */
+}
+
+.add-class button {
+  padding: 12px 20px;
+  font-size: 1.1em;
+}
+
+.class-list {
+  display: inline-block;
+  text-align: left;
+}
+
+.class-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.class-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0; /* Zwiększone odstępy */
+  font-size: 1.1em; /* Zwiększony rozmiar czcionki */
+}
+
+.class-list li span {
+  margin-right: 20px;
+}
+
+.class-list li button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 7px 14px; /* Zwiększone odstępy */
+  cursor: pointer;
+  font-size: 1.1em; /* Zwiększony rozmiar czcionki */
+}
+
+.class-list li button:hover {
+  background-color: darkred;
+}
+
+.message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Nowe style dla sekcji usuwania obiadów */
+.delete-meals-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.delete-meals-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete-meals-form select,
+.delete-meals-form input {
+  margin: 5px 0;
+  padding: 12px;
+  font-size: 1.1em;
+  width: 250px;
+}
+
+.delete-meals-form button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  font-size: 1.1em;
+}
+
+.delete-meals-form input::placeholder {
+  color: #aaa;
+}

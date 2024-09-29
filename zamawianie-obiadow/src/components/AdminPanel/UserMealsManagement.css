@@ -1,0 +1,50 @@
+.user-meals-management-container {
+    padding: 20px;
+  }
+  
+  .search-section {
+    margin-bottom: 20px;
+  }
+  
+  .search-section input {
+    padding: 8px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .search-section button {
+    padding: 8px 16px;
+  }
+  
+  .users-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .users-list li {
+    margin-bottom: 10px;
+  }
+  
+  .users-list button {
+    margin-left: 10px;
+  }
+  
+  .user-orders {
+    margin-top: 30px;
+  }
+  
+  .user-orders table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-orders th, .user-orders td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .user-orders th {
+    background-color: #f2f2f2;
+  }
+  

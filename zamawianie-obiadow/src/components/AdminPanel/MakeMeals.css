@@ -1,0 +1,165 @@
+.make-meals-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Wyśrodkowanie zawartości w pionie */
+  padding: 20px;
+  font-size: 18px; /* Increased base font size */
+}
+
+
+.create-meals input {
+  margin-right: 10px;
+  padding: 12px; /* Increased padding */
+  font-size: 1.1em; /* Increased font size */
+}
+
+.react-calendar__navigation__label {
+  color: #fff; /* White text for label */
+  font-size: 0.9em; /* Slightly increase the font size */
+  text-align: center; /* Center the text */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  overflow: hidden; /* Ensure overflow does not affect layout */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+  padding: 0 10px; /* Add padding to create space around the label */
+  max-width: 100%; /* Ensure label does not exceed the container's width */
+  box-sizing: border-box; /* Include padding in element's width */
+}
+.meals-calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #222; /* Very dark background color */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.meals-calendar .react-calendar {
+  background-color: #222; /* Very dark background color */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
+}
+
+.meals-calendar .react-calendar__tile {
+  background-color: transparent;
+  color: #fff; /* White text for dates */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.meals-calendar .react-calendar__tile:enabled:hover,
+.meals-calendar .react-calendar__tile:enabled:focus {
+  background-color: #555; /* Darker background for hover state */
+  color: #fff; /* White text */
+}
+
+.meals-calendar .react-calendar__tile--now {
+  background-color: #555 !important; /* Darker background for current date */
+}
+
+.meals-calendar .react-calendar__tile--active {
+  background-color: #007bff !important; /* Dark blue background for active dates */
+  color: #fff !important; /* White text for active dates */
+}
+
+.meals-calendar .meal-date {
+  background-color: #007bff !important; /* Dark blue background for meal dates */
+  color: #fff !important; /* White text for meal dates */
+  border-radius: 50%; /* Rounded dates */
+  border: 2px solid #0056b3 !important; /* Border color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meals-calendar .meal-date:hover,
+.meals-calendar .meal-date:focus {
+  background-color: #0056b3 !important; /* Darker blue on hover */
+  color: #fff !important; /* White text on hover */
+}
+
+/* Navigation buttons and other calendar parts */
+.react-calendar__navigation button {
+  color: #fff; /* White text */
+  background-color: #333; /* Dark background */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #555; /* Darker background on hover */
+}
+
+.react-calendar__month-view__weekdays {
+  background-color: #333; /* Dark background for weekdays */
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  color: #fff; /* White text for weekdays */
+}
+
+.react-calendar__navigation__label {
+  color: #fff; /* White text for label */
+}
+
+.react-calendar__navigation__arrow {
+  color: #fff; /* White text for arrows */
+}
+
+/* Additional styles for calendar navigation buttons */
+.react-calendar__navigation button {
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #555; /* Add border to improve visibility */
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #555;
+  color: #fff;
+  border: 1px solid #fff; /* Change border color on hover for better visibility */
+}
+
+.meals-table {
+  margin: 20px 0;
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.meals-table th, .meals-table td {
+  border: 1px solid #5e5e5e;
+  padding: 10px; /* Increased padding */
+  text-align: center; /* Wyśrodkowanie tekstu w tabeli */
+  font-size: 1.1em; /* Increased font size */
+}
+
+.meals-table th {
+  background-color: #797979;
+  color: black;
+}
+
+.error {
+  color: red;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination span {
+  font-size: 18px;
+  font-weight: bold;
+}

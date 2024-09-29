@@ -1,0 +1,74 @@
+.manage-users-container {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 4px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ffffffe1;
+  cursor: pointer;
+}
+
+.filters select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.users-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.users-list li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  cursor: pointer;
+  background-color: #ffffff3d;
+  font-size: 17px; /* Zwiększ rozmiar czcionki */
+}
+
+.users-list li:hover {
+  background-color: #2b646b;
+}
+
+.user-edit-form {
+  margin-top: 20px;
+}
+
+.user-edit-form input,
+.user-edit-form select,
+.user-edit-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.user-edit-form button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.user-edit-form button:hover {
+  background-color: #0056b3;
+}

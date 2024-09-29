@@ -1,0 +1,83 @@
+/* src/components/UserProfile/UserProfile.css */
+
+/* Kontener główny profilu użytkownika */
+.user-profile-container {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 18px; /* Zwiększony rozmiar czcionki */
+}
+
+/* Stylizacja tabeli z zamówieniami */
+.orders-table {
+  width: auto;
+  margin: 0 auto;
+  border-collapse: collapse; 
+  margin-top: 3%;
+  max-width: 99%;
+  overflow-x: auto;
+}
+
+.orders-table th, .orders-table td {
+  border: 1px solid #ffffff;
+  padding: 10px 14px; /* Zwiększone odstępy */
+  text-align: center;
+  font-size: 1.1em; /* Zwiększony rozmiar czcionki */
+}
+
+.orders-table th {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.cancel-button {
+  background-color: rgba(255, 0, 0, 0.637);
+  color: white;
+  border: none;
+  padding: 7px 14px; /* Zwiększone odstępy */
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.1em; /* Zwiększony rozmiar czcionki */
+  border-radius: 4px; /* Zaokrąglone rogi */
+  transition: background-color 0.3s ease; /* Płynne przejście koloru */
+}
+
+.cancel-button:hover {
+  background-color: rgba(255, 0, 0, 0.8); /* Ciemniejszy czerwony przy najechaniu */
+}
+
+/* Stylizacja kontrolek paginacji */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap; /* Zapewnia responsywność */
+}
+
+.pagination-controls button {
+  margin: 5px;
+  padding: 7px 14px; /* Zwiększone odstępy */
+  font-size: 1.1em; /* Zwiększony rozmiar czcionki */
+  border: none;
+  border-radius: 4px;
+  background-color: #333333;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Płynne przejście koloru */
+}
+
+.pagination-controls button:hover:not([disabled]) {
+  background-color: #ddd;
+}
+
+.pagination-controls button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Stylizacja komunikatów błędów */
+.error-message {
+  color: red;
+  margin-top: 20px;
+  font-weight: bold;
+}

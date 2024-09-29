@@ -1,0 +1,38 @@
+.about-container {
+  padding: 20px;
+  line-height: 1.8; /* Increased line-height */
+  font-size: 18px; /* Increased base font size */
+}
+
+.about-container h1, .about-container h2 {
+  color: #ddd;
+  font-size: 1.5em; /* Increased font size */
+}
+
+.about-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.contact-container {
+  text-align: center; /* Wycentruje tekst wewnątrz kontenera */
+  margin: 0 auto; /* Wycentruje kontener na stronie, jeśli ma szerokość mniejszą niż 100% */
+  max-width: 600px; /* Opcjonalnie: ustaw maksymalną szerokość kontenera */
+}
+
+.contact-container h1 {
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  margin-bottom: 10px;
+}
+
+.contact-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}
