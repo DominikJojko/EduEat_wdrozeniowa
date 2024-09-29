@@ -168,7 +168,6 @@ app.use((req, res, next) => {
 const authRoutes = require('./routes/authRoutes');
 app.use('/api', authRoutes);
 
-// AddUser.js
 app.post('/api/add-user', (req, res) => {
   console.log('Received add-user request:', req.body);
   const { login, password, imie, nazwisko, klasa, role_id } = req.body;
@@ -220,7 +219,6 @@ app.post('/api/check-user', (req, res) => {
   });
 });
 
-// Endpoint do usuwania użytkownika
 app.delete('/api/delete-user/:id', (req, res) => {
   const userId = req.params.id;
 
@@ -236,7 +234,6 @@ app.delete('/api/delete-user/:id', (req, res) => {
     res.status(200).json({ message: 'Użytkownik usunięty pomyślnie' });
   });
 });
-
 
 app.post('/api/register-user', (req, res) => {
   console.log('Received register-user request:', req.body);
@@ -293,7 +290,6 @@ app.put('/api/update-class', authenticateToken, (req, res) => {
     res.json({ message: 'Klasa i status zaktualizowane pomyślnie' });
   });
 });
-
 
 app.post('/api/create-meals', (req, res) => {
   const { startDate, endDate } = req.body;
@@ -462,9 +458,6 @@ app.delete('/api/delete-meal', (req, res) => {
   }
 });
 
-
-
-// Klasy
 app.get('/api/classes', (req, res) => {
   const query = 'SELECT id, name FROM class';
   db.query(query, (err, results) => {
@@ -502,7 +495,6 @@ app.post('/api/classes', (req, res) => {
   });
 });
 
-
 app.delete('/api/classes/:id', (req, res) => {
   const { id } = req.params;
   const query = 'DELETE FROM class WHERE id = ?';
@@ -514,7 +506,6 @@ app.delete('/api/classes/:id', (req, res) => {
     res.status(200).json({ success: true, message: 'Klasa usunięta pomyślnie' });
   });
 });
-
 
 app.post('/api/login', (req, res) => {
   console.log('Received login request:', req.body);
@@ -648,10 +639,6 @@ app.post('/api/add-order', (req, res) => {
   });
 });
 
-
-
-
-
 app.get('/meal-descriptions', (req, res) => {
   const now = new Date();
   now.setHours(now.getHours() + 2); // Dodaj 2 godziny, jeśli serwer działa w UTC
@@ -691,9 +678,6 @@ app.get('/meal-descriptions', (req, res) => {
   });
 });
 
-
-
-
 app.get('/api/user-balance', (req, res) => {
   const userId = req.query.userId;
 
@@ -716,7 +700,6 @@ app.get('/api/user-balance', (req, res) => {
   });
 });
 
-// GET - Pobieranie aktualnej ceny
 app.get('/api/price', (req, res) => {
   const query = 'SELECT amount FROM price WHERE id = 1';
   db.query(query, (err, results) => {
@@ -751,8 +734,6 @@ app.put('/api/end-of-year', (req, res) => {
   });
 });
 
-
-// PUT - Aktualizacja ceny
 app.put('/api/price', (req, res) => {
   const { amount } = req.body;
   const query = 'UPDATE price SET amount = ? WHERE id = 1';
@@ -764,7 +745,6 @@ app.put('/api/price', (req, res) => {
     res.json({ message: 'Cena obiadu zaktualizowana pomyślnie' });
   });
 });
-
 
 app.get('/api/users-manage', (req, res) => {
   const search = req.query.search || '';
@@ -804,7 +784,6 @@ app.get('/api/users-manage', (req, res) => {
   });
 });
 
-
 app.get('/api/statuses', (req, res) => {
   console.log('Zapytanie o statusy odebrane.');
   const statuses = [
@@ -816,8 +795,6 @@ app.get('/api/statuses', (req, res) => {
 
   res.json(statuses);
 });
-
-
 
 app.put('/api/users-manage/:id', (req, res) => {
   const userId = req.params.id;
@@ -1068,9 +1045,6 @@ app.get('/api/orders', (req, res) => {
   });
 });
 
-
-
-
 app.get('/api/classes', (req, res) => {
   const query = 'SELECT id, name FROM class';
   db.query(query, (err, results) => {
@@ -1290,7 +1264,6 @@ app.get('/api/user-orders/:userId', (req, res) => {
     res.json(results);
   });
 });
-
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
