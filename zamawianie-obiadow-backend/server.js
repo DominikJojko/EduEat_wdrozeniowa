@@ -150,8 +150,6 @@ app.delete('/api/admin/cancel-user-order/:orderId', (req, res) => {
   });
 });
 
-
-
 db.connect(err => {
   if (err) {
     console.error('Błąd połączenia z bazą danych:', err);
@@ -965,7 +963,6 @@ app.delete('/api/delete-meals-for-class', (req, res) => {
   });
 });
 
-
 app.get('/api/orders', (req, res) => {
   const { userId, filter, page = 1, limit = 10, start, end, class: classId, user } = req.query;
   const offset = (page - 1) * limit;
@@ -1116,7 +1113,6 @@ app.delete('/api/cancel-order/:orderId', (req, res) => {
     });
   });
 });
-
 
 app.post('/api/generate-report', (req, res) => {
   const { start, end } = req.body;
