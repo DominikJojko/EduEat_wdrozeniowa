@@ -89,10 +89,6 @@ router.post('/login', (req, res) => {
   });
 });
 
-
-
-
-// Przykładowy endpoint tylko dla admina
 router.get('/admin/some-action', verifyAdmin, (req, res) => {
   res.send('Akcja dostępna tylko dla admina');
 });
@@ -119,8 +115,6 @@ router.get('/user/:userId/balance', (req, res) => {
   });
 });
 
-
-// Endpoint dla pobierania opisów obiadów (dla użytkowników)
 router.get('/meal-descriptions', (req, res) => {
   const query = 'SELECT * FROM meal_descriptions';
   req.db.query(query, (err, results) => {
@@ -156,6 +150,5 @@ router.post('/register', (req, res) => {
     });
   });
 });
-
 
 module.exports = router;

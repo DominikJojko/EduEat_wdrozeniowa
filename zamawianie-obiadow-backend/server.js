@@ -33,6 +33,10 @@ const authenticateToken = (req, res, next) => {
   });
 };
 
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
 app.get('/api/all-users', (req, res) => {
   const query = 'SELECT id, login, imie, nazwisko FROM user';
   db.query(query, (err, results) => {
