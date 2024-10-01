@@ -33,6 +33,11 @@ const authenticateToken = (req, res, next) => {
   });
 };
 
+app.use((req, res, next) => {
+  req.db = db;
+  next();
+});
+
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
@@ -162,10 +167,7 @@ db.connect(err => {
   console.log('Połączono z bazą danych MySQL');
 });
 
-app.use((req, res, next) => {
-  req.db = db;
-  next();
-});
+
 
 const authRoutes = require('./routes/authRoutes');
 app.use('/api', authRoutes);
